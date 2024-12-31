@@ -1,0 +1,92 @@
+$text-color : #1E1E1E;
+$text-login : #707CF8;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: $text-color;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #fff;
+}
+
+#logo {
+  width: 120px;
+}
+
+nav {
+  display: none;
+}
+
+#menu {
+  list-style: none;
+
+  li {
+    margin: 0.5rem 0;
+  }
+
+  a {
+    text-decoration: none;
+    color: #333;
+  }
+}
+
+/* Estilos para login */
+#login {
+  margin-top: 1rem;
+  margin-left: 6rem;
+  list-style: none;
+
+  a {
+    color: $text-login;
+  }
+}
+
+.menu-toggle {
+  display: block;
+  font-size: 24px;
+  cursor: pointer;
+
+  nav.active {
+    display: block;
+  }
+}
+
+@media (min-width: 768px) {
+  nav {
+    display: block;
+  }
+
+  #menu {
+    display: flex;
+    gap: 2rem;
+
+    li {
+      margin: 0;
+    }
+  }
+
+  #login {
+    display: flex;
+    gap: 1rem;
+    margin-top: 0;
+  }
+
+  #menu-toggle {
+    display: none;
+  }
+}
