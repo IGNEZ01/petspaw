@@ -1,6 +1,44 @@
-body {
-    background-color: darkblue;
+$dark-purple : #707CF8;
+$light-purple : #747EF9;
+$btn-color-purple-light : #9FAAFA;
+$white : #FFFFFF;
+$title : #101010;
+$text : #888888;
+
+*{
+    font-family: 'Poppins',sans-serif;
 }
-nav {
-    background-color: red;
+
+nav{
+    background-color: $light-purple;
+    padding-bottom: 0.2rem;
 }
+
+    ul{
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        a{
+            text-decoration-line: none;
+            color: $white;
+            font-size: large;
+        }
+        li{
+            padding-bottom: 1rem;
+        }
+        #login{
+            padding: 0px;
+            flex-direction: row;
+            justify-content: space-between;
+            #btn-contact{
+                border-style:groove;
+                border-radius: 2rem;
+                padding-left: 1rem;
+                padding-right: 1rem;
+                padding-top: 0.5rem;
+                padding-bottom: 0.5rem;
+                margin-bottom: 1rem;
+                margin-right: 1rem;
+            }
+        }
+    }
