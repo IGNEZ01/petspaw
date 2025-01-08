@@ -9,10 +9,18 @@ $text : #888888;
     font-family: 'Poppins',sans-serif;
 }
 
+#menu-toggle{
+    float: right;
+}
+
+#menu-toggle:hover{
+    cursor: pointer;
+}
 nav{
     background-color: $light-purple;
     padding-bottom: 0.2rem;
-}
+    display: none;
+}   
 
     ul{
         list-style: none;
