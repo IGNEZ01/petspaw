@@ -14,7 +14,8 @@
 <body>
   <header id="header">
     <a href="#"><img id="logo" src="./src/img/petspaw-logo.svg" alt="Petspaw Logo" /></a>
-    <img id="menu-toggle" src="./src/img/hamburguer.svg" onclick="clickMenu()"/>
+    <img id="menu-open" class="menu-toggle" src="./src/img/hamburguer.svg" onclick="toggleMenu()"/>
+    <img id="menu-close" class="menu-toggle" src="./src/img/btn-fechar.svg" onclick="toggleMenu()"/>
     <nav id="Navbar">
       <ul id="menu">
         <li><a href="#">features</a></li>
@@ -168,13 +169,21 @@
     </div>
   </footer>
   <script>
-      function clickMenu() {
-        if(Navbar.style.display == 'block'){
-          Navbar.style.display = 'none'
-        } else{
-          Navbar.style.display = 'block'
-        }
-      }
+    function toggleMenu() {
+  const navbar = document.getElementById('Navbar');
+  const menuOpen = document.getElementById('menu-open');
+  const menuClose = document.getElementById('menu-close');
+
+  if (navbar.style.display === 'block') {
+    navbar.style.display = 'none'; 
+    menuOpen.style.display = 'block'; 
+    menuClose.style.display = 'none'; 
+  } else {
+    navbar.style.display = 'block'; 
+    menuOpen.style.display = 'none'; 
+    menuClose.style.display = 'block';
+  }
+}
   </script>
 </body>
 </html>
